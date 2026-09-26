@@ -57,3 +57,8 @@ jobs:
     - name: Deploy Playwright report to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
+    - name: Add report link to workflow summary
+      run: |
+        echo "## Playwright report" >> "$GITHUB_STEP_SUMMARY"
+        echo "Open the HTML report in your browser (no zip download):" >> "$GITHUB_STEP_SUMMARY"
+        echo "${{ steps.deployment.outputs.page_url }}" >> "$GITHUB_STEP_SUMMARY"
