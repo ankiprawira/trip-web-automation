@@ -36,7 +36,7 @@ export default defineConfig({
     
     video: 'off',
     screenshot: 'off',
-    headless: false,
+    headless: true,
     viewport:{ width: 1920, height: 1080 },
     // userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 SDET/1.0"
   
